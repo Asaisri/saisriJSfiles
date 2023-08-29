@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods</title>
+</head>
+<body>
+	<h2>Array Methods</h2>
+	<script type="text/javascript">
+		document.write("Map() Method" +"<br>");
+		let Data = ['saisri','Baby','College','Home'];
+		let names=Data.map(function(name)
+		{
+		document.write(name)
+		})
+		document.write("<hr>")
+		let nums =[2,9,5,4,7,6];
+		let even_nums =nums.filter(function(fil) 
+		{
+			return fil%2==0
+		})
+		document.write("filter() Method" + "<br>")
+		document.write("Odd numbers in the array = "+even_nums,"<br>")
+
+		let odd_nums=nums.filter(function(fil,i,arr) //current element,index,arr
+		{
+			return fil%2!=0
+		})
+		document.write("Even numbers in the array = "+odd_nums)
+		document.write("<hr>");
+		let arr1 = [64,85,29,82,19];
+		let arr111 = [64,85,29,82,19];
+		document.write("sort() Method"+"<br>");
+		document.write("Given array is = "+arr111 +"<br>");
+		arr1.sort();
+		document.write(arr1);
+		document.write("<hr>");
+		const arr2 = [5,12,8,9,15];
+		document.write("forEach() Method"+"<br>");
+		document.write("Given array is = "+arr2 +"<br>");
+		arr2.forEach(fun);
+		function fun(item,index,arr){
+			arr[index] = item*10; 
+		}
+		document.write(arr2);
+		document.write("<hr>");
+		let arr3 = [36,38,18,5];
+		let arr4 = [64,95,15,6];
+		let arr5 = [13,54,23,75];
+		let arr33 = [36,38,18,5];
+		let arr44 = [64,95,15,6];
+		let arr55 = [13,54,23,75];
+		document.write("concat() Method"+"<br>")
+		document.write("Given array is = "+arr33 +"<br>");
+		document.write("Given array is = "+arr44 +"<br>");
+		document.write("Given array is = "+arr55 +"<br>");
+		let arr_concat = arr3.concat(arr4,arr5);
+		document.write("Concatination of 3 arrays = "+arr_concat);
+		document.write("<hr>");
+		const arr6 = [35,58,96,65,68];
+		const arr66 = [35,58,96,65,68];
+		document.write("every() Method"+"<br>");
+		document.write("Given array is = "+arr66 +"<br>");
+		const isBelow_ = (curVal) => curVal >40;
+		document.write(arr6.every(isBelow_));
+		document.write("<hr>");
+		const ages = [3,74,18,20];
+		document.write("some() Method"+"<br>");
+		document.write("Given array is = "+ages +"<br>");
+		ages.some(checkAdult);
+		function checkAdult(age){
+			return age > 18;
+		}
+		document.write(checkAdult());
+		document.write("<hr>");
+		const num = [1,2,3];
+		document.write("includes() Method"+"<br>");
+		document.write("Given array is = "+num +"<br>");
+		document.write(num.includes(2));
+		document.write("<hr>");
+		let bikes = ["Enfield","KTM","R15"];
+		document.write("join() Method"+"<br>");
+		document.write("Given array is = "+bikes +"<br>");
+		document.write(bikes.join(""));
+		document.write("<hr>");
+		const arr7 = [175,50,25];
+		document.write("reduce() Method"+"<br>");
+		document.write("Given array is = "+arr7 +"<br>");
+		arr7.reduce(myFun);
+		function myFun(total,num){
+			return total-num
+		}
+		document.write(myFun(175,50));
+		document.write("<hr>");
+		const arr8 = [5,12,8,130,44];
+		document.write("find() Method"+"<br>");
+		document.write("Given array is = "+arr8 +"<br>");
+		const found = arr8.find((element)=> element > 10);
+		document.write(found);
+		document.write("<hr>");
+		const arr9 = [5,22,87,120,46];
+		document.write("findIndex() Method"+"<br>");
+		document.write("Given array is = "+arr9 +"<br>");
+		const isLargenum = (element)=> element > 119;
+		document.write(arr9.findIndex(isLargenum));
+		document.write("<hr>");
+		let arr10 = [5,46,65,86,129,508];
+		document.write("indexOf() Method"+"<br>");
+		document.write("Given array is = "+arr10 +"<br>");
+		document.write("index value at 129 is = "+arr10.indexOf(129));
+		document.write("<hr>");
+		const arr11 = ["Apple","banana","Kiwi","guava"];
+		document.write("fill() Method"+"<br>");
+		document.write("Given array is = "+arr11 +"<br>");
+		arr11.fill("papaya",2);
+		document.write(arr11);
+		document.write("<hr>");
+		let arr12 = [2,3785,47,96,2653,56];
+		let a12 = arr12.slice(1,4);
+		document.write("slice() Method"+"<br>");
+		document.write("Given array is = "+arr12 +"<br>");
+		document.write(a12);
+		document.write("<hr>");
+		let arr13 = ['a','b','c','d'];
+		let arr131 = ['a','b','c','d'];
+		let a13 = arr13.reverse();
+		document.write("reverse() Method"+"<br>");
+		document.write("Given array is = "+arr131 +"<br>");
+		document.write(a13);
+		document.write("<hr>");
+		let arr14 = ["Saisri","Lalitha","Krishna","Lakshmi"];
+		let arr141 = ["Saisri","Lalitha","Krishna","Lakshmi"];
+		document.write("push() Method"+"<br>");
+		document.write("Given array is = "+arr141 +"<br>");
+		arr14.push("Sanju","Vasu","Bhagya");
+		document.write(arr14);
+		document.write("<hr>");
+		let arr15 = ["AEC","ACET","ACOE"];
+		let arr151 = ["AEC","ACET","ACOE"];
+		document.write("pop() Method"+"<br>");
+		document.write("Given array is = "+arr151 +"<br>");
+		arr15.pop();
+		document.write(arr15);
+		document.write("<hr>");
+		let arr16 = ["HYD","RJY","USA","UK"];
+		document.write("shift() Method"+"<br>");
+		document.write("Given array is = "+arr16 +"<br>");
+		arr16.shift();
+		document.write(arr16);
+		document.write("<hr>");
+		let arr17 = ["Rose,Lilly","Jasmine"];
+		document.write("unshift() Method"+"<br>");
+		document.write("Given array is = "+arr17 +"<br>");
+		arr17.unshift("Lotus","Lavender");
+		document.write(arr17);
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

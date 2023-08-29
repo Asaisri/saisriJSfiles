@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon Task</title>
+</head>
+<body>
+	<center>
+	<div style="height:500px;width:350px;background-color: ghostwhite;border:2px solid black;box-shadow:2px 2px 2px black;">
+		<img src="m1.jpg" onmouseover="getImg(this)"style="height:300px;width:350px;padding-top:100px;">
+	</div>
+	</center>
+	<script type="text/javascript">
+		let c = 0;
+		function getImg(img){
+			if (c==1){
+				img.src = "m2.jpg";
+			c = 0;
+			}
+			else{
+				img.src = "m1.jpg";
+				c = 1;
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MouseEvents</title>
+</head>
+<body>
+	<button id="b">Click Here</button>
+	<script type="text/javascript">
+		let bt = document.getElementById('b');
+		// bt.onmouseover=sample;
+		// bt.onmouseout = s;
+		//bt.ondblclick = sample;
+		//bt.onclick = sample;
+		bt.onmousemove = sample;
+		function sample(){
+			document.body.style.background = "skyblue";
+		}
+		function s(){
+			document.body.style.background="pink";
+		}
+		bt.style.height = "50px";
+		bt.style.width = "150px";
+		bt.style.background = "lavender"
+		bt.style.border = "2px solid darkblue";
+	</script>
+</body>
+</html>

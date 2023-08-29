@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods Task</title>
+</head>
+<body>
+	<h1>String Methods</h1>
+	<script type="text/javascript">
+		function getstring(str){
+			document.write("<b>"+str+"</b><br>");
+		}
+		let s1 = "College";
+		getstring("Given string s1 = "+s1);
+		getstring("Substring of s1 is = "+s1.substr(0,6));
+		document.write("<hr>");
+		let s2 = "TechnicalHub";
+		getstring("Given string s2 = "+s2);
+		getstring("Substring of s2 is = "+s2.substring(7,12));
+		document.write("<hr>");
+		let s3 = "Full Stack Batch";
+		getstring("Given string s3 = "+s3);
+		getstring("replace of Batch with trainee = "+s3.replace('Batch','trainee'));
+		document.write("<hr>");
+		let s4 = "Sai sri ";
+		getstring("Given string s4 = "+s4);
+		// getstring("Given string s21="+s21);
+		getstring("search() method = "+s4.search('sri'));
+		document.write("<hr>");
+		let s5 = "Aripirala";
+		getstring("Given string s5 = "+s5);
+		getstring("To Lower case() method = "+s5.toLowerCase());
+		document.write("<hr>");
+		let s6 = "Breakfast";
+		getstring("Given string s6 = "+s6);
+		getstring("To Upper case() method = "+s6.toUpperCase());
+		document.write("<hr>");
+		let s7 = "Sai";
+		getstring("Given string s7 = "+s7);
+		getstring("index of 'a' = "+s7.indexOf('a'));
+		document.write("<hr>");
+		let s8 = "Engineering";
+		getstring("Given string s8 = "+s8);
+		getstring("includes of string 'neer' = "+s8.includes('neer'));
+		document.write("<hr>");
+		let s9 = "Bootstrap";
+		getstring("Given string s9 = "+s9);
+		getstring('slice of string = '+s9.slice(1,5));
+		document.write("<hr>");
+		let s10 = "JavaScript ";
+		let s11 = "In Front End"
+		getstring("Given string s10 = "+s10);
+		getstring("Concate of two strings = "+s10.concat(s11));
+		document.write("<hr>");
+		let s12 = "Aditya";
+		getstring("Given string s12 = "+s12);
+		getstring("Last Index of string s12 = "+s12.lastIndexOf('a'));
+		document.write("<hr>");
+		let s13 = "HighSchool";
+		getstring("Given string s13 = "+s13);
+		getstring("Unicode value of 'S' is = "+s13.charCodeAt(4));
+		document.write("<hr>");
+		let s14 = " Earning money ";
+		getstring("Given String s14 is = "+s14);
+		getstring("trim() method = "+s14.trim());
+		document.write("<hr>");
+		let s15 = "Python";
+		getstring("Given String s15 is = "+s15);
+		getstring("Char At() method = "+s15.charAt(0));
+		document.write("<hr>");
+		let s16 = "Eagle ";
+		getstring("Given String s16 is = "+s16);
+		getstring("value of() method = "+s16.valueOf());
+		document.write("<hr>");
+		let s17 ="Saisri at aditya college";
+		getstring("Given String s17 is = "+s17);
+		getstring("split() method = "+s17.split('o'));
+		document.write("<hr>");
+		let s18 = "sai123";
+		getstring("Given String s18 is = "+s18);
+		getstring("Convert to string = "+s18.toString());
+		document.write("<hr>");
+		let s19 = "Lalitha Rani"
+		getstring("Match() method = "+s19.match('Rani'));
+	</script>
+</body>
+</html>

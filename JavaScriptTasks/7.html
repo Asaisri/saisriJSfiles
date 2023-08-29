@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a = 121;
+		let rev = 0;
+		let temp = a;
+		while (temp!=0){
+			d = temp%10;
+			temp = parseInt(temp/10);
+			rev = rev*10+d;
+		}
+		if (rev==a){
+			document.write("Palindrome number");
+		}
+		else{
+			document.write("Not a Palindrome number");
+		}
+	</script>
+
+</body>
+</html>

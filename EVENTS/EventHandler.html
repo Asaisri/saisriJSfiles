@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handler</title>
+</head>
+<body>
+	<!-- <button onclick="alert('testing')">Click here</button> -->
+	<!-- inline Event Handler -->
+	<!-- <button onclick='test()' id="s">Click Here</button>
+	<script type="text/javascript">
+		function test(){
+			alert("testing")
+			document.body.style.background="grey"
+		}
+		let a = document.getElementById('s');
+		s.style.color = "blue";
+		s.style.background="pink";
+		s.style.border = "2px solid green";
+	</script> -->
+	<!-- 2nd way Event Properties -->
+<!-- 	<button id="btn">Click Here</button>
+	<script type="text/javascript">
+		//2nd way
+		let b = document.getElementById('btn');
+		//anonymous function
+		b.onclick = function(){
+			alert("Hello")
+			document.body.style.background = 'lavender'
+		}
+		btn.style.color = "blue";
+		btn.style.background="yellow";
+		btn.style.border = "2px solid green";
+		btn.style.height="50px";
+		btn.style.width="120px";
+	</script> -->
+	<!-- 3rd  -->
+	<!-- <button id="btn">Click Here</button>
+	<script type="text/javascript">
+		let a = document.getElementById("btn")
+		a.addEventListener('click',function(){
+			alert("Hellooo")
+			document.body.style.background = "lightgrey"
+		})
+		a.style.color = "blue";
+		a.style.background="pink";
+		a.style.border = "2px solid green";
+		a.style.height="50px";
+		a.style.width="120px";
+
+	</script> -->
+<!-- 	<button onclick="hidediv()">Hide</button>
+	<button onclick="showdiv()">show</button>
+	<div id="d">Gooday</div>
+	<script type="text/javascript">
+
+		function hidediv(){
+			document.getElementById('d').style.display='none'
+		}
+		function showdiv(){
+			document.getElementById('d').style.display='block'
+		}
+		let di = document.getElementById('d');
+		di.style.height="400px";
+		di.style.width="500px";
+		di.style.background="grey";
+	</script> -->
+	<button onclick="incby1()">increment</button>
+	<button onclick="decby1()">decrement</button>
+	<p>Output</p>
+	<p id="para"></p>
+	<script type="text/javascript">
+		var i = 1;
+		function incby1(){
+			if (i<=5){
+				document.getElementById('para').innerText = i++
+			}	
+		}
+		function decby1(){
+		if (i>0)
+			{
+				document.getElementById('para').innerText = i--
+			}
+		}
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+

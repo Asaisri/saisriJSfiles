@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DynamicLoop</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var obj = [{
+			'name':'saisri ',
+			'rollno':'1234 ',
+			'College':'AEC ',
+			'Branch':'ECE'+"<br>"
+		},
+		{
+			'name':'sanju ',
+			'rollno':'4321 ',
+			'College':'ACET ',
+			'Branch':'CSE',
+			'email':'saisri@gmail.com'+"<br>"
+		},
+		{
+			'name':'Munnisha ',
+			'rollno':'432 ',
+			'College':'ACOE ',
+			'Branch':'IT'+"<br>"
+		},
+		{
+			'name':'Chandu ',
+			'rollno':'04M5 ',
+			'College':'AEC ',
+			'Branch':'ECE '+"<br>"
+		}]
+		for (var i=0;i<obj.length;i++){
+	      for (var key in obj[i]){
+	       document.write(obj[i][key])
+	      }
+	    }
+		</script>
+</body>
+</html>

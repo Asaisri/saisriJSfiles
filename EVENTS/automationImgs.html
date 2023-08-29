@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sliding Images</title>
+</head>
+<body>
+	<center>
+	<div class="a"><img src="walppr.jpg" alt="wallpaper" style="width:80%;height:700px"></div>
+	<div class="a"><img src="1.png" alt="case" style="width:80%;height:700px"></div>
+	<div class="a"><img src="2.webp" alt="moon" style="width:80%;height:700px"></div>
+	<div class="a"><img src="3.jpg" alt="djfofkm" style="width:80%;height:700px"></div>
+	</center>
+	<script type="text/javascript">
+		let inc=0;
+		function slides(){
+			let i;
+			let s=document.getElementsByClassName('a');
+			for (i = 0; i < s.length; i++) {
+			s[i].style.display="none";
+			}
+			inc++; 
+			if (inc > s.length)
+				{
+					inc = 1
+				}    
+			s[inc-1].style.display = "block";  
+			setTimeout(slides,2000);
+		}
+		slides();
+	</script>
+</body>
+</html>

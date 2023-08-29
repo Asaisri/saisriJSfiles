@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guessing Number Game</title>
+</head>
+<body>
+	<h4>Guessing Number Game </h4>
+	<form>
+		<p>Enter a Number from 0-100</p>
+		<input type="text" name =" " value="" id="input">
+		<button id="btn">! Play !</button>
+		<p>computer number : </p><span id="p"></span>
+		<p id="p1"></p>
+
+	</form>
+	<script type="text/javascript">
+		let btn = document.getElementById('btn')
+
+		btn.onclick =function(){
+			var mynum = document.getElementById('input').innerText
+			var num = document.getElementById('p')
+			var p1 = document.getElementById('p1')
+			var rand = Math.floor(Math.random() * 101);
+			num.innerHTML = rand; 
+			if(num == mynum){
+				p1.innerText = "You won the Game";
+			}
+			else{
+				p1.innerText = 'you lose';
+			}
+		}
+	</script>
+</body>
+</html>

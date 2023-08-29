@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// let a = /Saisri/;
+		// let output = a.test("Saisri Aripirala");
+		// console.log(output);
+		// let b = /SA748y/i;
+		// let o = b.test("Saisri Aripirala");
+		// console.log(o);
+		let c = /^a/;
+		let op = c.test("saisri");
+		console.log(op);
+		// let r = 'sai';
+		// re = new RegExp('{r}');
+		// let outp = re.test("saisri123");
+		// console.log(outp);
+		let re = /life/g; //g for multiple indexes
+		res = re.exec("hi life long love orange movie life");
+		console.log(res);
+		console.log(res.index);
+		res = re.exec("hi life long love orange movie life");
+		console.log(res);
+		console.log(res.index);
+		// let s1 = /^[0-9]{10}$/
+		// output = s1.test("7993188034"); //correct way 
+		// document.write(output);
+		let s1 = /^[0-9]{10}/
+		output = s1.test("7993188033657"); //not a correct way bcoz it checks upto 10 numbers and it returns true 
+		document.write(output);
+		if (output == true){
+			alert("Perfect validation")
+		}
+		else{
+			alert("Imperfect Validation")
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Validation</title>
+</head>
+<body>
+	<p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
+	<form id="f" onsubmit="return Validation()" method="post">
+		First name:
+		<input type="text" name="fn" id="fstnm">
+		<br><br>
+		Last name:
+		<input type="text" name="ln" id="lstnm"><br><br>
+		<select name="college" id="clg">
+			<option>----Select Colleges----</option>
+			<option value="AEC">AEC</option>
+			<option value="ACET">ACET</option>
+			<option value="ACOE">ACOE</option>
+		</select>
+		<br><br>
+		<input type="submit" value="submit">
+	</form>
+	<script type="text/javascript">
+		function Validation(){
+			let fn =document.getElementById("fstnm").value;
+			let ln =document.getElementById("lstnm").value;
+			let college =document.getElementById("clg").value;
+			if (fn==''){
+				alert("Please Enter First Name");
+				return false;
+			}
+			if (ln==''){
+				alert("Please Enter Last Name");
+				return false;
+			}
+			if (college=='----Select Colleges----'){
+				alert("Please Choose College Name");
+				return false;
+			}
+		}
+	</script>
+
+</body>
+</html>

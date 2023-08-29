@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DomTableTask1</title>
+</head>
+<body>
+	<table border="3">
+		<tr>
+			<th>Course name</th>
+			<th>Coarse number</th>
+			<th>Coarse fees</th>
+			<th>Place</th>
+		</tr>
+		<tbody id="sai"></tbody>
+	</table>
+	<script type="text/javascript">
+		let data = [{
+			name : 'HTML',
+			number : 348685,
+			fees : 457,
+			place : 'rjy'
+		},
+		{
+			name : 'CSS',
+			number : 386685,
+			fees : 438,
+			place : 'kvr'
+		},
+		{
+			name : 'JS',
+			number : 345785,
+			fees : 272,
+			place : 'hyd'
+		}]
+		for (var i = 0;i<data.length;i++){
+			let tr = document.createElement("tr");
+			let a = document.createElement("td");
+			let b = document.createElement("td");
+			let c = document.createElement("td");
+			let d = document.createElement("td");
+		a.innerText = data[i].name;
+		b.innerHTML = data[i].number;
+		c.innerHTML = data[i].fees;
+		d.innerHTML = data[i].place;
+		tr.append(a)
+		tr.append(b)
+		tr.append(c)
+		tr.append(d)
+		document.getElementById('sai').append(tr)
+	}
+	</script>
+</body>
+</html>

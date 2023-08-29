@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cake peices Task</title>
+</head>
+<body>
+	<center>
+	<div style="height:500px;width:350px;background-color: ghostwhite;border:2px solid black;box-shadow:2px 2px 2px black;">
+		<img src="ck1.webp" onmouseover="getImg(this)"style="height:300px;width:350px;padding-top:100px;">
+	</div>
+	</center>
+	<script type="text/javascript">
+		let c = 0;
+		function getImg(img){
+			if (c==1){
+				img.src = "ck2.jpg";
+			c = 0
+			}
+			else{
+				img.src = "ck1.webp";
+				c = 1;
+			}
+		}
+	</script>
+</body>
+</html>

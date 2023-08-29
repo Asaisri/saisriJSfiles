@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String methods</title>
+</head>
+<body>
+	<center>
+	<table border ="" cellspacing="0" cellpadding="5px;">
+		<tr>
+			<td>D</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td>&nbsp; </td>
+			<td>R</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table><br>
+	<script type="text/javascript">
+		// function getstring(str){
+		// 	document.write("<b>"+str+"</b><br>");
+		// }
+		// let n = 'Drive Ready';
+		// getstring(n);
+		// getstring(n.length);
+		// getstring(n.charAt(6)); //character at index
+		// getstring(n.indexOf(' ')) //character number at index
+		// getstring(n.indexOf('Ready')) //displaying the first char of word
+		function getstring(str){
+			document.write("<b>"+str+"</b><br>");
+		}
+		let n = 'Drive ready';
+		getstring("Original String="+n);
+		getstring("String length ="+n.length);
+		getstring("Char At ="+n.charAt(6)); //character at index
+		getstring("index of ="+n.indexOf('r')) //character number at index
+		getstring("Index of 2nd way="+n.indexOf('ready')) //displaying the first char of word
+		getstring("Last Index of string="+n.lastIndexOf('r'))
+		let n1 = 'DRIVE READY ';
+		getstring("To Lower case="+n1.toLowerCase())
+		getstring("To Upper case="+n.toUpperCase())
+		let n2 = 'First ';
+		let n3 = 'Batch ';
+		let n4 = 'Saisri ';
+		getstring("Concate of string="+n1.concat(n2));
+		getstring("Concate of string="+n1.concat(n2,n3,n4));
+		let user = ' Saisri ';
+		getstring("trim() method="+user.trim()) //removing the spaces on left and right
+		// converting string into an array --> string.split()
+		console.log(n.split(""))
+		let name = "Sai&Sri,Sanju";
+		console.log(name.split(','))//[0]-->Sai [1]-->Sri
+		console.log(name.split(','))//[0]-->Sai&Sri [1]-->Sanju
+		let n5 = 'Drive ready';
+		console.log(n5.startsWith('s')); //F
+		console.log(n5.startsWith('S')); //T
+		console.log(n5.endsWith('S'));  //F
+		console.log(n5.endsWith('i'));  //T
+		// slice method
+		// ss('slice of string='+str.slice(startpos,endpos-1));
+		// it allows positive and negative index values
+		getstring('slice of string='+n5.slice(1,5));
+		getstring('slice of string='+n5.slice(-3)); // -3 -2 -1
+		getstring('slice of string='+n5.slice(-4,-2)) // -4,(-2-1) = -4,-3
+		let namestr = 'Saisri';
+		//includes method
+		getstring('includes of string='+namestr.includes('sri'));
+
+		//substring method
+		getstring('substring of string='+namestr.substring(1,4));//(1,3)
+		getstring('substring of string='+namestr.substring(4,1));//(1,3)
+		getstring('substring of string='+namestr.substring(-1));//(1,3)
+        
+        //substr method
+        getstring("substr mtehod="+namestr.substr(0,4));
+        //repeat method
+        getstring('repeat of string='+namestr.repeat(2));
+        //replace method
+        getstring('replace of string='+namestr.replace('sri','Sanju'));
+
+
+
+	</script>
+	</center>
+</body>
+</html>
